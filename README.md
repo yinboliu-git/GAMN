@@ -1,12 +1,13 @@
 # GAMN
-Disentangled Similarity Graph Attention Memory Network for miRNA-Disease Association Prediction
-
-
-warnings.filterwarnings('ignore', category=AttributeError)
+Paper: Disentangled Similarity Graph Attention Memory Network for miRNA-Disease Association Prediction
 
 
 
 
+If you'd like to use my code, you only need to run the following command:
+
+
+python main.py
 
 
 
