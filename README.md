@@ -7,7 +7,7 @@ Paper: Disentangled Similarity Graph Attention Memory Network for miRNA-Disease 
 If you'd like to use my code, you only need to run the following command:
 
 
-python main.py
+python main_bio.py
 
 
 
