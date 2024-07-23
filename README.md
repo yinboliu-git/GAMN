@@ -7,7 +7,7 @@ Paper: Disentangled Similarity Graph Attention Memory Network for miRNA-Disease 
 If you'd like to use my code, you only need to run the following command:
 
 
-python main_bio.py
+> python main_bio.py
 
 
 
@@ -21,7 +21,7 @@ AttributeError: 'NoneType' object has no attribute 'split'
 
 Please update threadpoolctl, numpy, and scikit-learn by running the following command:
 
-''' python
+'''python
 pip install --upgrade threadpoolctl numpy scikit-learn
 '''
 
