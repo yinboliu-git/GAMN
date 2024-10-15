@@ -54,20 +54,20 @@ def get_k_id(k, df):
 
     # Cluster m_gs using KMeans and encode cluster IDs as one-hot vectors
     kmeans_m_gs = KMeans(n_clusters=k)
-    m_gc = kmeans_m_gs.fit_transform(m_gs).argmax(1)
+    m_gc = kmeans_m_gs.fit_predict(m_gs)
     m_gc_onehot = OneHotEncoder(sparse=False).fit_transform(m_gc.reshape((-1, 1)))
 
     # Repeat clustering and encoding for m_ss, p_gs, and p_ss
     kmeans_m_ss = KMeans(n_clusters=k)
-    m_sc = kmeans_m_ss.fit_transform(m_ss).argmax(1)
+    m_sc = kmeans_m_ss.fit_predict(m_ss)
     m_sc_onehot = OneHotEncoder(sparse=False).fit_transform(m_sc.reshape((-1, 1)))
 
     kmeans_p_gs = KMeans(n_clusters=k)
-    p_gc = kmeans_p_gs.fit_transform(p_gs).argmax(1)
+    p_gc = kmeans_p_gs.fit_predict(p_gs)
     p_gc_onehot = OneHotEncoder(sparse=False).fit_transform(p_gc.reshape((-1, 1)))
 
     kmeans_p_ss = KMeans(n_clusters=k)
-    p_sc = kmeans_p_ss.fit_transform(p_ss).argmax(1)
+    p_sc = kmeans_p_ss.fit_predict(p_ss)
     p_sc_onehot = OneHotEncoder(sparse=False).fit_transform(p_sc.reshape((-1, 1)))
 
     # Save the one-hot encoded vectors to new files
